@@ -14,7 +14,7 @@ class CommentBox extends React.Component {
   saveComment = e => {
     e.preventDefault();
 
-    // Save the comment with an action creator
+    // TODO: Save the comment with an action creator
 
     // Empty the textarea
     this.setState({
@@ -25,10 +25,10 @@ class CommentBox extends React.Component {
   render() {
     return (
       <form onSubmit={this.saveComment}>
-        <h4> Add a comment </h4>
+        <h4>Add a comment</h4>
         <textarea value={this.state.comment} onChange={this.handleChange} />
         <div>
-          <button> Save Comment </button>{' '}
+          <button>Save Comment</button>
         </div>
       </form>
     );
