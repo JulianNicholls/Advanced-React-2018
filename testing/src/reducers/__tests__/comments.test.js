@@ -14,7 +14,7 @@ describe('commentsReducer', () => {
   });
 
   it('handles unknown actions', () => {
-    const newState = commentsReducer([], { type: 'unknown' });
+    const newState = commentsReducer([], { type: 'invalid' });
 
     expect(newState).toEqual([]);
   });
