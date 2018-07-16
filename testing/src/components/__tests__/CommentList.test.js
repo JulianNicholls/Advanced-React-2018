@@ -24,7 +24,7 @@ describe('CommentList', () => {
   });
 
   it('has the text of each comment', () => {
-    // expect(mounted.text()).toContain('Comment 1');
+    // expect(mounted.text()).toContain('Comment 1');     // Discouraged
     // expect(mounted.text()).toContain('Second Cmnt');
 
     const content = mounted.render();

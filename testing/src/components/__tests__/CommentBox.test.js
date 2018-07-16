@@ -19,9 +19,9 @@ describe('CommentBox', () => {
     mounted.unmount();
   });
 
-  it('has a textarea and a button', () => {
+  it('has a textarea and a pair of buttons', () => {
     expect(mounted.find('textarea').length).toEqual(1);
-    expect(mounted.find('button').length).toEqual(1);
+    expect(mounted.find('button').length).toEqual(2);
   });
 
   describe('the textarea', () => {
