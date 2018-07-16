@@ -1,13 +1,18 @@
 import React from 'react';
 import { mount } from 'enzyme';
 
+import Root from 'Root';
 import CommentBox from 'components/CommentBox';
 
 describe('CommentBox', () => {
   let mounted;
 
   beforeEach(() => {
-    mounted = mount(<CommentBox />); // A shallow wrapper would do, this is for information
+    mounted = mount(
+      <Root>
+        <CommentBox />
+      </Root>
+    ); // A shallow wrapper would do, this is for information
   });
 
   afterEach(() => {
