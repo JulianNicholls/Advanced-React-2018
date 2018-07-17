@@ -4,6 +4,8 @@ import { connect } from 'react-redux';
 
 import CommentBox from 'components/CommentBox';
 import CommentList from 'components/CommentList';
+import requireAuth from 'components/requireAuth';
+
 import * as actions from 'actions';
 
 class App extends React.Component {
@@ -33,8 +35,8 @@ class App extends React.Component {
     return (
       <div className="container">
         {this.renderHeader()}
-        <Route path="/post" component={CommentBox} />
         <Route path="/" exact component={CommentList} />
+        <Route path="/post" component={requireAuth(CommentBox)} />
       </div>
     );
   }

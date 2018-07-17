@@ -5,13 +5,20 @@ This is the code from the Advanced React course by Stephen Grider at
 
 ## Progress
 
-Begun section 3 - HOC
+Completed section 3 - HOC
 
 ## Differences from Stephen's
 
 I have added some minimal CSS to the apps.
 
-I have done the Section 3 - HOC in a new directory valled HOC
+I have done the Section 3 - HOC in a new directory called HOC, rather than 
+continuing in the testing directory.
+
+I used `requireAuth(CommentBox)` as the component to be loaded by the `/post` 
+route, rather than calling it at the bottom of the CommentBox file. It seems 
+to me that putting it in there inextricably links requireAuth to the CommentBox, 
+defeating the whole object of the HOC in the first place.
+
 
 #### Login / Signin
 

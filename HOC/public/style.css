@@ -1,6 +1,8 @@
 body {
-  font-family: sans-serif;
   box-sizing: border-box;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 h4 {
@@ -8,29 +10,30 @@ h4 {
 }
 
 .container {
+  margin: 0 auto;
   width: 800px;
-  margin: 20px auto;
 }
 
 .comment-box {
-  background: #f0ffff;
-  padding: 10px;
+  background: hsl(150, 50%, 90%);
   display: grid;
+  grid-gap: 20px;
   grid-template-columns: 2fr 3fr;
-  grid-gap: 10px;
+  padding: 10px;
 }
 
 textarea {
+  min-height: 4rem;
   width: 100%;
 }
 
 .fetch-comments {
-  justify-self: start;
   align-self: end;
+  justify-self: start;
 }
 
 .comment-list {
-  background: #f0fff0;
+  background: hsl(210, 50%, 90%);
   padding: 10px;
 }
 
@@ -43,10 +46,10 @@ ul {
 }
 
 ul.nav {
-  padding: 10px;
   background: #303030;
   font-size: 0.8rem;
   margin: 0;
+  padding: 10px;
 }
 
 ul.nav li {
@@ -55,8 +58,8 @@ ul.nav li {
 }
 
 ul.nav a {
-  text-decoration: none;
   color: #e0e0e0;
+  text-decoration: none;
 }
 
 ul.nav a:hover {
