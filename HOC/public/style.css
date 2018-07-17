@@ -3,6 +3,10 @@ body {
   box-sizing: border-box;
 }
 
+h4 {
+  text-align: center;
+}
+
 .container {
   width: 800px;
   margin: 20px auto;

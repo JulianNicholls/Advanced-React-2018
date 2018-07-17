@@ -1,13 +1,15 @@
 # Advanced React and Redux - 2018
 
 This is the code from the Advanced React course by Stephen Grider at
-[Udemy]https://www.udemy.com/react-redux-tutorial/learn/v4/overview)
+[Udemy](https://www.udemy.com/react-redux-tutorial/learn/v4/overview)
 
 ## Progress
 
 Begun section 3 - HOC
 
-## Differences
+## Differences from Stephen's
+
+I have added some minimal CSS to the testing app, carrying over into the HOC app.
 
 I have done the Section 3 - HOC in a new directory valled HOC
 
