@@ -5,7 +5,11 @@ This is the code from the Advanced React course by Stephen Grider at
 
 ## Progress
 
-Completed section 2 - Testing
+Begun section 3 - HOC
+
+## Differences
+
+I have done the Section 3 - HOC in a new directory valled HOC
 
 ### Git client
 
