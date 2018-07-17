@@ -11,8 +11,8 @@ Completed section 3 - HOC
 
 I have added some minimal CSS to the apps.
 
-I have done the Section 3 - HOC in a new directory called HOC, rather than 
-continuing in the testing directory.
+I have done each section in a new directory, rather than continuing in 
+the testing directory.
 
 I used `requireAuth(CommentBox)` as the component to be loaded by the `/post` 
 route, rather than calling it at the bottom of the CommentBox file. It seems 

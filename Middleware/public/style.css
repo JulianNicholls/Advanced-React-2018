@@ -1,0 +1,67 @@
+body {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h4 {
+  text-align: center;
+}
+
+.container {
+  margin: 0 auto;
+  width: 800px;
+}
+
+.comment-box {
+  background: hsl(150, 50%, 90%);
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 2fr 3fr;
+  padding: 10px;
+}
+
+textarea {
+  min-height: 4rem;
+  width: 100%;
+}
+
+.fetch-comments {
+  align-self: end;
+  justify-self: start;
+}
+
+.comment-list {
+  background: hsl(210, 50%, 90%);
+  padding: 10px;
+}
+
+h4 {
+  margin: 0 0 20px 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul.nav {
+  background: #303030;
+  font-size: 0.8rem;
+  margin: 0;
+  padding: 10px;
+}
+
+ul.nav li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+ul.nav a {
+  color: #e0e0e0;
+  text-decoration: none;
+}
+
+ul.nav a:hover {
+  color: #fff;
+}
