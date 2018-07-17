@@ -8,6 +8,20 @@ class CommentBox extends React.Component {
     comment: ''
   };
 
+  componentDidMount() {
+    this.redirectIfLoggedOut();
+  }
+
+  componentDidUpdate() {
+    this.redirectIfLoggedOut();
+  }
+
+  redirectIfLoggedOut() {
+    if (!this.props.auth) {
+      this.props.history.push('/');
+    }
+  }
+
   handleChange = e => {
     this.setState({
       comment: e.target.value
@@ -44,7 +58,13 @@ class CommentBox extends React.Component {
   }
 }
 
+function mapStateToProps(state) {
+  return {
+    auth: state.auth
+  };
+}
+
 export default connect(
-  null,
+  mapStateToProps,
   actions
 )(CommentBox);
