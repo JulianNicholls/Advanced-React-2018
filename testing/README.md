@@ -5,7 +5,7 @@ This is the code from the Advanced React course by Stephen Grider at
 
 ## Progress
 
-Working on Testing
+Completed section 2 - Testing
 
 ### Git client
 
