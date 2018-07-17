@@ -13,7 +13,7 @@ h4 {
 }
 
 .comment-box {
-  background: #f0f0f0;
+  background: #f0ffff;
   padding: 10px;
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -25,12 +25,12 @@ textarea {
 }
 
 .fetch-comments {
-  justify-self: center;
+  justify-self: start;
   align-self: end;
 }
 
 .comment-list {
-  background: #e0e0e0;
+  background: #f0fff0;
   padding: 10px;
 }
 
@@ -40,4 +40,24 @@ h4 {
 
 ul {
   list-style-type: none;
+}
+
+ul.nav {
+  padding: 10px;
+  background: #303030;
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+ul.nav li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+ul.nav a {
+  color: #eee;
+}
+
+ul.nav a:hover {
+  color: #fff;
 }
