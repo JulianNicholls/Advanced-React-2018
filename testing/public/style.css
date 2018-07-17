@@ -1,0 +1,39 @@
+body {
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 800px;
+  margin: 20px auto;
+}
+
+.comment-box {
+  background: #f0f0f0;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 10px;
+}
+
+textarea {
+  width: 100%;
+}
+
+.fetch-comments {
+  justify-self: center;
+  align-self: end;
+}
+
+.comment-list {
+  background: #e0e0e0;
+  padding: 10px;
+}
+
+h4 {
+  margin: 0 0 20px 0;
+}
+
+ul {
+  list-style-type: none;
+}
