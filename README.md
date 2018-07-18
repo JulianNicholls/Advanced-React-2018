@@ -5,7 +5,7 @@ This is the code from the Advanced React course by Stephen Grider at
 
 ## Progress
 
-Completed section 3 - HOC
+Completed section 4 - Middleware
 
 ## Differences from Stephen's
 
@@ -23,12 +23,12 @@ defeating the whole object of the HOC in the first place.
 #### Login / Signin
 
 I have used Login / Logout instead of Signin / Signout consistently across the 
-HOC, auth server and client, because I prefer the complete difference in words.
+apps, because I prefer the complete difference in words.
 I have confused myself, and I have seen lecturers / co-workers confuse themselves 
 and me when there is the slip of the tongue between talking about signin and signup.
 e.g.
 
-* HOC header button
+* HOC / Middleware header button
 
 
 ### Git client
