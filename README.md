@@ -19,8 +19,7 @@ route, rather than calling it at the bottom of the CommentBox file. It seems
 to me that putting it in there inextricably links requireAuth to the CommentBox, 
 defeating the whole object of the HOC in the first place.
 
-
-#### Login / Signin
+### Login / Signin
 
 I have used Login / Logout instead of Signin / Signout consistently across the 
 apps, because I prefer the complete difference in words.
@@ -31,7 +30,7 @@ e.g.
 * HOC / Middleware header button
 
 
-### Git client
+## Git client
 
 I have used Git at the command-line for almost 10 years. Over that time, 
 I have tried many different graphical shells for Git, without finding one 
@@ -40,7 +39,7 @@ that was easier and nicer to use than the command-line (in my view).
 I have now found that [GitKraken](https://www.gitkraken.com) is an excellent
 Git shell and would advise using it to everyone.
 
-### Questions
+## Questions
 
 If you have any questions about this repository, or any others of mine, please
 don't hesitate to contact me.
