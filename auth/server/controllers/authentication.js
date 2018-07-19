@@ -9,6 +9,12 @@ exports.signup = (req, res, next) => {
   const password = req.body.password;
   const name = req.body.name;
 
+  if (!email || !password) {
+    return res
+      .status(422)
+      .send({ error: 'You must provide an email address and password' });
+  }
+
   // See if a user exist swith the given email address
 
   User.findOne({ email: email }, (err, existingUser) => {
@@ -30,7 +36,7 @@ exports.signup = (req, res, next) => {
       if (err) return next(err);
 
       // Respond to request
-      res.json(user);
+      res.json({ success: true });
     });
   });
 };
