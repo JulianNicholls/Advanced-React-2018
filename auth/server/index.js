@@ -4,9 +4,16 @@ const express = require('express');
 const http = require('http');
 const bodyParser = require('body-parser');
 const morgan = require('morgan');
+const mongoose = require('mongoose');
 
 const router = require('./router');
 
+// DB setup
+
+mongoose.connect(
+  'mongodb://127.0.0.1:27017/auth',
+  { useNewUrlParser: true }
+);
 // App setup
 
 const app = express();

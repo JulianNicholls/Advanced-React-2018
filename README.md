@@ -19,6 +19,8 @@ route, rather than calling it at the bottom of the CommentBox file. It seems
 to me that putting it in there inextricably links requireAuth to the CommentBox, 
 defeating the whole object of the HOC in the first place.
 
+I have added a name to the User in the authentication app.
+
 ### Login / Signin
 
 I have used Login / Logout instead of Signin / Signout consistently across the 
