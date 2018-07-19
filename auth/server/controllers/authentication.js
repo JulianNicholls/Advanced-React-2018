@@ -11,6 +11,7 @@ function tokenForUser(user) {
   return jwt.encode({ sub: user.id, iat: timestamp }, config.secret);
 }
 
+// Sign a user up
 exports.signup = (req, res, next) => {
   // Load data from the POST
 
@@ -45,12 +46,13 @@ exports.signup = (req, res, next) => {
     user.save((err, data) => {
       if (err) return next(err);
 
-      // Respond to request, indicating that the user was created
+      // Respond to request with a JWT
       res.json({ token: tokenForUser(user) });
     });
   });
 };
 
+// Log a user in
 exports.login = (req, res, next) => {
   res.json({ success: true });
 };
