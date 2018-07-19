@@ -30,6 +30,7 @@ and me when there is the slip of the tongue between talking about signin and sig
 e.g.
 
 * HOC / Middleware header button
+* Authentication.signup and Authentication.login
 
 
 ## Git client
