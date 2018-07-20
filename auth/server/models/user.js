@@ -29,10 +29,18 @@ userSchema.pre('save', function(next) {
   });
 });
 
-// Create the model class
+// Compare the current user password with a candidate password
 
-const modelClass = mongoose.model('user', userSchema);
+userSchema.methods.comparePassword = function(candidate, callback) {
+  bcrypt.compare(candidate, this.password, (err, isMatch) => {
+    if (err) return callback(err);
+
+    callback(null, isMatch);
+  });
+};
+
+// Create the model class
+const UserClass = mongoose.model('user', userSchema);
 
 // Export it
-
-module.exports = modelClass;
+module.exports = UserClass;
