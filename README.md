@@ -5,7 +5,7 @@ This is the code from the Advanced React course by Stephen Grider at
 
 ## Progress
 
-Completed section 4 - Middleware
+Completed section 5 - Authentication Server
 
 ## Differences from Stephen's
 
