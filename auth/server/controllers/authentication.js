@@ -52,7 +52,10 @@ exports.signup = (req, res, next) => {
   });
 };
 
-// Log a user in
+// Log a user in, their email and password have been authenticated
+// We need to return a token
 exports.login = (req, res, next) => {
-  res.json({ success: true });
+  // Passport has put the user specified in the done() callback
+  // into the req
+  res.json({ token: tokenForUser(req.user) });
 };
