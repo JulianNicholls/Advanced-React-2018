@@ -21,6 +21,10 @@ defeating the whole object of the HOC in the first place.
 
 I have added a name to the User in the authentication app.
 
+In general, I do not call the payload property in an action by the name payload. 
+redux-promise REQUIRES that the payload is called payload, but otherwise I use a 
+name such as token, text etc. 
+
 ### Login / Signin
 
 I have used Login / Logout instead of Signin / Signout consistently across the 
