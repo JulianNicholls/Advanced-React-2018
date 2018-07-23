@@ -5,7 +5,7 @@ This is the code from the Advanced React course by Stephen Grider at
 
 ## Progress
 
-Completed section 5 - Authentication Server
+Working on section 6 - Authentication Client
 
 ## Differences from Stephen's
 
@@ -35,7 +35,7 @@ e.g.
 
 ## Git client
 
-I have used Git at the command-line for almost 10 years. Over that time, 
+I have used Git at the command-line for 10 years. Over that time, 
 I have tried many different graphical shells for Git, without finding one 
 that was easier and nicer to use than the command-line (in my view).
 
