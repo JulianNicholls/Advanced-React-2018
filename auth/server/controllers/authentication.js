@@ -14,10 +14,7 @@ function tokenForUser(user) {
 // Sign a user up
 exports.signup = (req, res, next) => {
   // Load data from the POST
-
-  const email = req.body.email;
-  const password = req.body.password;
-  const name = req.body.name;
+  const { email, password, name } = req.body;
 
   // An email address and password are mandatory
   if (!email || !password) {
@@ -26,8 +23,7 @@ exports.signup = (req, res, next) => {
       .send({ error: 'You must provide an email address and password' });
   }
 
-  // See if a user exist swith the given email address
-
+  // See if a user exists with the given email address
   User.findOne({ email: email }, (err, existingUser) => {
     if (err) return next(err);
 
@@ -37,11 +33,7 @@ exports.signup = (req, res, next) => {
     }
 
     // Otherwise, create a new user
-    const user = new User({
-      email,
-      password,
-      name
-    });
+    const user = new User({ email, password, name });
 
     user.save((err, data) => {
       if (err) return next(err);
