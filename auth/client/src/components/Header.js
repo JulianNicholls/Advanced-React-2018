@@ -6,11 +6,21 @@ class Header extends React.Component {
     return (
       <div>
         <ul className="nav">
-          <li><Link to="/">Redux Auth</Link></li>
-          <li><Link to="/signup">Sign up</Link></li>
-          <li><Link to="/login">Log in</Link></li>
-          <li><Link to="/logout">Log out</Link></li>
-          <li><Link to="/feature">Feature</Link></li>
+          <li>
+            <Link to="/">Redux Auth</Link>
+          </li>
+          <li>
+            <Link to="/feature">Feature</Link>
+          </li>
+          <li className="flush-right">
+            <Link to="/signup">Sign up</Link>
+          </li>
+          <li className="flush-right">
+            <Link to="/login">Log in</Link>
+          </li>
+          <li className="flush-right">
+            <Link to="/logout">Log out</Link>
+          </li>
         </ul>
       </div>
     );

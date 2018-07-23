@@ -5,6 +5,10 @@ body {
   padding: 0;
 }
 
+h1, h2 {
+  text-align: center;
+}
+
 h4 {
   text-align: center;
 }
@@ -55,6 +59,10 @@ ul.nav {
 ul.nav li {
   display: inline-block;
   margin-right: 10px;
+}
+      
+ul.nav li.flush-right {
+  float: right;
 }
 
 ul.nav a {
