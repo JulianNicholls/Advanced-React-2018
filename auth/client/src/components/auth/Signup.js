@@ -15,7 +15,7 @@ class Signup extends React.Component {
     const { handleSubmit } = this.props;
 
     return (
-      <div>
+      <React.Fragment>
         <h2>Sign up</h2>
         <form onSubmit={handleSubmit(this.onSubmit)}>
           <fieldset>
@@ -40,7 +40,7 @@ class Signup extends React.Component {
           )}
           <button>Sign up</button>
         </form>
-      </div>
+      </React.Fragment>
     );
   }
 }
