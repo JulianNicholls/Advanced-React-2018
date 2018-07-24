@@ -6,7 +6,10 @@ import { compose } from 'redux';
 import * as actions from 'actions';
 
 class Signup extends React.Component {
-  onSubmit = formProps => this.props.signup(formProps);
+  onSubmit = formProps =>
+    this.props.signup(formProps, () => {
+      this.props.history.push('/feature');
+    });
 
   render() {
     const { handleSubmit } = this.props;
