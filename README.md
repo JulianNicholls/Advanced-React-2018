@@ -35,6 +35,7 @@ e.g.
 
 * HOC / Middleware header button
 * Authentication.signup and Authentication.login
+* Client Login / Logout components
 
 
 ## Git client

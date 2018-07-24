@@ -9,8 +9,15 @@ export const signup = (formProps, callback) => async dispatch => {
     const { token } = response.data;
 
     dispatch({ type: AUTH_USER, token });
+    localStorage.setItem('token', token);
     callback();
   } catch (e) {
     dispatch({ type: AUTH_ERROR, text: 'That email address is already in use' });
   }
+};
+
+export const logout = () => {
+  localStorage.removeItem('token');
+
+  return { type: AUTH_USER, token: '' };
 };

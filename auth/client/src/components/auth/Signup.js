@@ -35,7 +35,7 @@ class Signup extends React.Component {
             <label htmlFor="name">Name (Optional)</label>
             <Field name="name" type="text" component="input" autoComplete="none" />
           </fieldset>
-          {this.props.errorMessage !== '' && (
+          {this.props.errorMessage && (
             <div className="error">{this.props.errorMessage}</div>
           )}
           <button>Sign up</button>
