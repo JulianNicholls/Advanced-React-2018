@@ -16,6 +16,23 @@ export const signup = (formProps, callback) => async dispatch => {
   }
 };
 
+export const login = (formProps, callback) => async dispatch => {
+  try {
+    const response = await axios.post('http://localhost:3090/login', formProps);
+
+    const { token } = response.data;
+
+    dispatch({ type: AUTH_USER, token });
+    localStorage.setItem('token', token);
+    callback();
+  } catch (e) {
+    dispatch({
+      type: AUTH_ERROR,
+      text: 'That email or password were not recognised'
+    });
+  }
+};
+
 export const logout = () => {
   localStorage.removeItem('token');
 
