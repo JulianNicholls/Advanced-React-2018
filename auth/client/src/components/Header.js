@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 class Header extends React.Component {
   render() {
     return (
-      <div>
+      <header>
         <ul className="nav">
           <li className="brand">
             <Link to="/">Redux Auth</Link>
@@ -22,7 +22,7 @@ class Header extends React.Component {
             <Link to="/logout">Log out</Link>
           </li>
         </ul>
-      </div>
+      </header>
     );
   }
 }
