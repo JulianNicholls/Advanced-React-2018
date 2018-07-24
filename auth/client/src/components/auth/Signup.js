@@ -6,11 +6,7 @@ import { compose } from 'redux';
 import * as actions from 'actions';
 
 class Signup extends React.Component {
-  onSubmit = formProps => {
-    console.log(formProps);
-
-    this.props.signup(formProps);
-  };
+  onSubmit = formProps => this.props.signup(formProps);
 
   render() {
     const { handleSubmit } = this.props;
@@ -36,6 +32,9 @@ class Signup extends React.Component {
             <label htmlFor="name">Name (Optional)</label>
             <Field name="name" type="text" component="input" autoComplete="none" />
           </fieldset>
+          {this.props.errorMessage !== '' && (
+            <div className="error">{this.props.errorMessage}</div>
+          )}
           <button>Sign up</button>
         </form>
       </div>
@@ -43,9 +42,13 @@ class Signup extends React.Component {
   }
 }
 
+const mapStateToProps = state => {
+  return { errorMessage: state.auth.errorMessage };
+};
+
 export default compose(
   connect(
-    null,
+    mapStateToProps,
     actions
   ),
   reduxForm({ form: 'signup' })

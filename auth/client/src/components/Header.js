@@ -6,7 +6,7 @@ class Header extends React.Component {
     return (
       <div>
         <ul className="nav">
-          <li>
+          <li className="brand">
             <Link to="/">Redux Auth</Link>
           </li>
           <li>
