@@ -5,7 +5,7 @@ This is the code from the Advanced React course by Stephen Grider at
 
 ## Progress
 
-Working on section 6 - Authentication Client
+Completed course
 
 ## Differences from Stephen's
 
