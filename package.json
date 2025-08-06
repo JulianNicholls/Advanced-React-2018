@@ -19,7 +19,7 @@
   "homepage": "https://github.com/JulianNicholls/Advanced-React-2018#readme",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
-    "eslint": "^5.1.0",
+    "eslint": "^9.32.0",
     "eslint-config-react-app": "^2.1.0",
     "eslint-plugin-flowtype": "^2.50.0",
     "eslint-plugin-import": "^2.13.0",
