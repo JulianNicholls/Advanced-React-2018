@@ -20,7 +20,7 @@
     "cors": "^2.8.5",
     "express": "^5.1.0",
     "jwt-simple": "^0.5.6",
-    "mongoose": "^8.9.5",
+    "mongoose": "^8.22.1",
     "morgan": "^1.10.1",
     "passport": "^0.6.0",
     "passport-jwt": "^4.0.1",
